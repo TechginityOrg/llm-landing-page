@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>LLM Tool</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Add AI-themed styles here (optional) */
+    .use-case-block {
+      background-color: #f8f9fa; /* Light background */
+      border: 1px solid #ddd;    /* Light border */
+      padding: 20px;            /* Padding */
+      border-radius: 5px;         /* Rounded corners */
+      text-align: center;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .section-header h2 {
+      font-size: 36px; 
+      font-weight: bold;
+      color: #040677;
+    }
+    
+    .section-header p {
+      font-size: 18px;
+      color: #666; 
+    }
+
+    .hero{
+      height: 100dvh;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">LLM Tool</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#details">Applications</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img-1.png" class="img-fluid animated" alt=""> 
+          </div>
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Unlock the Power of LLMs with <span>LLM Tool</span></h1>
+            <p>Transform Your Business with AI-Driven Solutions</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+          </path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>About LLM Tool</h3>
+            <h2>Fine-tune Your AI for Success</h2>
+            <p>LLM Tool is a powerful platform that allows you to harness the potential of large language models (LLMs) by easily fine-tuning them to your specific needs. Whether you're a seasoned AI developer or just starting your journey, LLM Tool provides an intuitive interface and robust features to empower you to build cutting-edge AI applications.</p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-robot"></i>
+                  <h3>AI-Powered Solutions</h3>
+                  <p>Leverage the latest advancements in AI to optimize your workflows.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Easy Fine-tuning</h3>
+                  <p>Customize LLMs to your specific needs with our intuitive platform.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3>Improved Efficiency</h3>
+                  <p>Streamline processes and boost productivity across various departments.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-lock"></i>
+                  <h3>Data Security</h3>
+                  <p>Your data is safe and secure with our robust security measures.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="section-header"> 
+          <h2>Key Features</h2>
+          <p>Explore the core functionalities that drive innovation</p> 
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-eye" style="color: #ffbb2c;"></i>
+              <h3><a href="" class="stretched-link">Intuitive Interface</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #5578ff;"></i>
+              <h3><a href="" class="stretched-link">Customizable Workflows</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-mortarboard" style="color: #e80368;"></i>
+              <h3><a href="" class="stretched-link">Robust Security</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-nut" style="color: #e361ff;"></i>
+              <h3><a href="" class="stretched-link">Scalable Solutions</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+            <!-- Stats Section -->
+            <section id="stats" class="stats section light-background">
+
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+                <div class="row gy-4">
+        
+                  <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-emoji-smile"></i>
+                    <div class="stats-item">
+                      <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                      <p>Happy Clients</p>
+                    </div>
+                  </div><!-- End Stats Item -->
+        
+                  <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-journal-richtext"></i>
+                    <div class="stats-item">
+                      <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                      <p>Successful Projects</p>
+                    </div>
+                  </div><!-- End Stats Item -->
+        
+                  <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-headset"></i>
+                    <div class="stats-item">
+                      <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                      <p>Hours Of Support</p>
+                    </div>
+                  </div><!-- End Stats Item -->
+        
+                  <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <i class="bi bi-people"></i>
+                    <div class="stats-item">
+                      <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                        class="purecounter"></span>
+                      <p>Hard Workers</p>
+                    </div>
+                  </div><!-- End Stats Item -->
+        
+                </div>
+        
+              </div>
+        
+            </section><!-- /Stats Section -->
+
+
+    <!-- Details Section (formerly Check Our Details) -->
+    <section id="details" class="details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Applications</h2> <div><span>Explore LLM Tool's Applications</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/medical-2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>For Medical Professionals</h3>
+            <p class="fst-italic">
+              Revolutionize healthcare with AI-driven insights.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <strong>Improving Diagnostic Accuracy:</strong> Interpret medical imaging and lab
+                  results with enhanced pattern recognition for early diagnosis.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Personalized Treatment Plans:</strong> Analyze patient history and current
+                  health status to recommend tailored treatments and predict patient responses.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Clinical Decision Support:</strong> Provide real-time assistance to
+                  clinicians during consultations, integrate with EHR systems for evidence-based recommendations.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/details-1.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>For Finance Professionals</h3>
+            <p class="fst-italic">
+              Make data-driven decisions and optimize financial strategies.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <strong>Improving Financial Analysis:</strong> Analyze vast amounts of financial
+                  data to uncover hidden trends, anomalies, and valuable insights.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Personalized Investment Strategies:</strong> Create tailored investment
+                  plans by assessing individual investor profiles and predicting market trends.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Compliance and Regulatory Support:</strong> Ensure compliance with
+                  financial regulations through real-time monitoring and automated document review.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
+            <img src="assets/img/details-3.png" class="img-fluid" alt=""> 
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="300">
+            <h3>For Manufacturing</h3>
+            <p class="fst-italic">
+              Optimize operations, enhance quality, and increase efficiency.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <strong>Predictive Maintenance:</strong> Minimize downtime by predicting equipment failures and scheduling timely maintenance. </span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Quality Control:</strong> Automate quality control processes to detect defects and ensure products meet stringent standards.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Production Optimization:</strong> Streamline manufacturing processes by optimizing schedules and resource allocation.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="400">
+            <img src="assets/img/details-4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="400">
+            <h3>For Customer Service</h3>
+            <p class="fst-italic">
+              Elevate customer experiences and improve support efficiency.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> <strong>Personalized Support:</strong> Offer tailored support based on individual customer history and preferences.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Automated Issue Resolution:</strong> Deploy smart chatbots to handle routine inquiries and free up your team for complex tasks.</span></li>
+              <li><i class="bi bi-check"></i> <span> <strong>Sentiment Analysis:</strong> Stay ahead of customer sentiments and proactively address issues to ensure a positive experience.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <!-- Other Use Case Blocks -->
+        <div class="container" data-aos="fade-up" data-aos-delay="500">
+          <div class="row">
+            <div class="col-12 section-title">
+              <h3>More Use Cases</h3>
+              <p>LLM Tool's adaptability extends to a wide range of industries and applications.</p>
+            </div>
+          </div>
+        
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="use-case-block">
+                <h6>Information Technology</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="use-case-block">
+                <h6>Legal & Compliance</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="use-case-block">
+                <h6>Procurement & Supply Chain</h6>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="use-case-block">
+                <h6>Education</h6>
+              </div>
+            </div>
+            <!-- Add more use case blocks as needed -->
+          </div>
+        
+        </div>
+
+      </div>
+
+    </section><!-- /Details Section -->
+
+
+
+    <!-- LLM Fine-tuning Section  -->
+    <section id="llm-finetuning" class="llm-finetuning section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>What is LLM Fine-tuning?</h1>
+        <p>Learn how to leverage LLM fine-tuning to enhance your AI applications.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Understanding the Basics</h3>
+            <p>LLM fine-tuning is a process that adapts a pre-trained language model to a specific task or domain.
+              This allows you to create AI solutions that are more accurate, efficient, and tailored to your unique
+              needs.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3>How to Use LLM Fine-tuning</h3>
+            <p>With LLM Tool, you can easily fine-tune LLMs by providing relevant data and adjusting parameters. Our
+              platform guides you through the process, making it accessible even for those with limited AI experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /LLM Fine-tuning Section -->
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Have questions about LLM Tool or LLM fine-tuning? Find answers here.
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What types of LLMs can I fine-tune with LLM Tool?</h3>
+                <div class="faq-content">
+                  <p>LLM Tool supports a wide range of popular LLMs, including GPT-3, BERT, and RoBERTa. We are
+                    continuously adding support for new models to provide you with the latest and greatest AI
+                    technology.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What kind of data do I need for fine-tuning?</h3>
+                <div class="faq-content">
+                  <p>The type of data you need for fine-tuning depends on the specific task or domain you're targeting.
+                    Generally, you'll need a dataset of text or code that is relevant to your application. LLM Tool
+                    provides guidance on data preparation and formatting to ensure optimal results.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Do I need coding experience to use LLM Tool?</h3>
+                <div class="faq-content">
+                  <p>No, LLM Tool is designed to be user-friendly and accessible to everyone, regardless of their coding
+                    experience. Our intuitive interface guides you through the fine-tuning process, and we provide
+                    comprehensive documentation and support to help you along the way.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <!-- Add more FAQ items as needed -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <div><span>Get in Touch</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">LLM Tool</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#details">Use Cases</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">LLM Tool</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="#">Techginity</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Initialize Swiper (for the carousel) -->
+  <script>
+    var otherUseCasesSwiper = new Swiper(".other-use-cases-carousel", {
+      slidesPerView: 'auto', // Adjust as needed
+      spaceBetween: 10,     // Adjust spacing between slides
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
